@@ -1,15 +1,15 @@
-public class Demo {
+
+class Demo{
+    int a=10;
+     Demo(){
+       System.out.println("protected Access Modifier");
+   }
     public static void main(String[] args) {
-        int a=10;
+        Demo d=new Demo();
 
+        System.out.println(d.a);
 
-        for (int i = 0; i<20;i++) {
-            if(i==a){
-                continue;
-            }
-            System.out.println(i);
-
-        }
 
     }
+  
 }
