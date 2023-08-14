@@ -1,14 +1,11 @@
 
 class Demo{
-    int a=10;
-     Demo(){
-       System.out.println("protected Access Modifier");
-   }
+
     public static void main(String[] args) {
-        Demo d=new Demo();
+        String s1 = "abc";
+        String s2 = "abc";
 
-        System.out.println(d.a);
-
+        System.out.println("s1 == s2 is:" + s1 == s2);
 
     }
   
