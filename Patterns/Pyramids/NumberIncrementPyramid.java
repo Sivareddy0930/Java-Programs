@@ -1,4 +1,4 @@
-package Patterns;
+package Patterns.Pyramids;
 
 public class NumberIncrementPyramid {
     public static void main(String[] args) {

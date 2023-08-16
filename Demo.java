@@ -1,13 +1,10 @@
-import java.util.Scanner;
+import java.util.*;
 
-class Demo{
-
-
+class Demo {
 
     public static void main(String[] args) {
 
     }
-    public  void main() {}
 
-    }
+}
 

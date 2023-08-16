@@ -6,7 +6,7 @@
 //        1
 
 
-package Patterns;
+package Patterns.Pyramids;
 import java.util.Scanner;
 public class NumberDescPyramid {
     public static void main(String[] args) {
