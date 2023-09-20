@@ -1,4 +1,5 @@
 public class Palindrome {
+    
     public static void main(String[] args) {
         String s="abba";
 
@@ -38,18 +39,32 @@ public class Palindrome {
         }   */
 
 
+//        //SECOND APPROCH
+//        String reverse2="";
+//
+//        for(int i=s.length()-1;i>=0;i--){
+//            reverse2=reverse2+s.charAt(i);
+//        }
+//        if(reverse2.equals(s)){
+//            System.out.println("Palindrome");
+//        }
+//        else{
+//            System.out.println("Not a Palindrome");
+//        }
 
-        String reverse2="";
 
-        for(int i=s.length()-1;i>=0;i--){
-            reverse2=reverse2+s.charAt(i);
-        }
-        if(reverse2.equals(s)){
-            System.out.println("Palindrome");
-        }
-        else{
-            System.out.println("Not a Palindrome");
-        }
+        StringBuilder sc=new StringBuilder(s);
+            sc.reverse();
+            // if we are comparing  two different class content like string and stringBuffer .
+            // must have to use toString() method to avoid unwanted result.
+//        if(sc.equals(s)){
+            if(sc.toString().equals(s)){
+                System.out.println("Palindrome");
+            }
+            else{
+                System.out.println(" NOT Palindrome");
+            }
+
 
     }
 }
