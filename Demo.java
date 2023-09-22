@@ -1,15 +1,24 @@
-class Demo{
-    public static void main(String[] args){
-
-
-        try{
-            System.out.println(10/0);
+public class Demo
+{
+    public static void main(String [] args)
+    {
+        try
+        {
+            badMethod();
+            System.out.print("A");
         }
-
-        catch (Exception e){
-            System.out.println("handled");
+        catch (Exception ex)
+        {
+            System.out.print("B");
         }
-        System.out.println("hi");
-
-            }
+        finally
+        {
+            System.out.print("C");
+        }
+        System.out.print("D");
+    }
+    public static void badMethod()
+    {
+        throw new Error(); /* Line 22 */
+    }
 }
