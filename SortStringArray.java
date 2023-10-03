@@ -1,10 +1,7 @@
-//char x[]={'a','d','z','s'};
-//char y[]={'v','b','x','w'};
+import java.util.ArrayList;
+import java.util.Arrays;
 
-import java.util.*;
-
-public class Demo {
-
+public class SortStringArray {
     public static void main(String[] args) {
         String x[]={"Siva","Reddy"};
         String y[]={"Tumu","Venkata"};
@@ -13,18 +10,19 @@ public class Demo {
 
 
 
+
     public static void addArrays(String c[], String c1[]){
-            ArrayList<String> al=new ArrayList();
+        ArrayList<String> al=new ArrayList();
 
-            for(String ch:c){
+        for(String ch:c){
 
-                al.add(ch);
-            }
-            for(String ch:c1) {
+            al.add(ch);
+        }
+        for(String ch:c1) {
 
-                al.add(ch);
-            }
-           // Collections.sort(al);
+            al.add(ch);
+        }
+
         System.out.println(al);
 
         String arr[]=new String[al.size()];
