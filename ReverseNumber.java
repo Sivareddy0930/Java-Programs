@@ -10,5 +10,18 @@ public class ReverseNumber {
             reverse=reverse*10+value;
         }
         System.out.println("Reverse:-"+reverse);
+
+        //-----------------------------------------------------------
+        int n=12345678;
+
+        int rev=0;
+        while(n>0){
+            int value;
+            value=n%10;
+            n=n/10;
+            rev=(rev*10)+value;
+        }
+        System.out.println(rev);
+
     }
 }

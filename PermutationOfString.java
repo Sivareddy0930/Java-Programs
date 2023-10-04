@@ -3,9 +3,7 @@ import java.util.Arrays;
 public class PermutationOfString {
 
     public static boolean isPermutation(String s1, String s2) {
-            if (s1.length() != s2.length()) {
-                return false;
-            }
+
 
             char[] charArray1 = s1.toCharArray();
             char[] charArray2 = s2.toCharArray();

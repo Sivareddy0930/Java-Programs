@@ -52,18 +52,31 @@ public class Palindrome {
 //            System.out.println("Not a Palindrome");
 //        }
 
+//------------------------------------------------------------
+//        StringBuilder sc=new StringBuilder(s);
+//            sc.reverse();
+//            // if we are comparing  two different class content like string and stringBuffer .
+//            // must have to use toString() method to avoid unwanted result.
+////        if(sc.equals(s)){
+//            if(sc.toString().equals(s)){
+//                System.out.println("Palindrome");
+//            }
+//            else{
+//                System.out.println(" NOT Palindrome");
+//            }
+//------------------------------------------------------------------------------------------
 
         StringBuilder sc=new StringBuilder(s);
-            sc.reverse();
-            // if we are comparing  two different class content like string and stringBuffer .
-            // must have to use toString() method to avoid unwanted result.
-//        if(sc.equals(s)){
-            if(sc.toString().equals(s)){
-                System.out.println("Palindrome");
-            }
-            else{
-                System.out.println(" NOT Palindrome");
-            }
+        sc.reverse();
+
+//        if(sc.contentEquals(s)){
+        //it is a string class method not string Buffer-class.
+        if(s.contentEquals(sc)){
+            System.out.println("Palindrome");
+        }
+        else{
+            System.out.println(" NOT Palindrome");
+        }
 
 
     }
