@@ -12,6 +12,8 @@ class Demo3 {
 
         }
         System.out.println(count);
+        System.out.println(count);
+
     }
 
 
