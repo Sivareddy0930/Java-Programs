@@ -1,20 +1,23 @@
 import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 class Demo3 {
     public static void main(String[] args) {
-       Scanner sc=new Scanner(System.in);
-      String s= sc.nextLine();
-        int count =1;
-        for(int i=0;i<s.length()-1;i++){
-            if(s.charAt(i)==' '){
-                count++;
-            }
+
+      String s= "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";
+
+      char[] ch=s.toCharArray();
+        System.out.println(ch);
+
+        
+
+       long count=Stream.of(ch).count();
+        System.out.println(count);
 
         }
-        System.out.println(count);
-        System.out.println(count);
+
 
     }
 
 
-}
