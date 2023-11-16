@@ -1,25 +1,18 @@
+import java.util.*;
+import java.util.Arrays;
 import java.util.Scanner;
 public class FrequencyOfCharacters {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter a String:- ");
 
-        String s=sc.next();
+        Integer arr[]={1,2,3,4,2,2,5,4,4,1,4};
+        List<Integer> al=Arrays.asList(arr);
 
-        char[] arr=s.toCharArray();
+        System.out.println(al);
 
-        for(int i=0;i<arr.length;i++){
+        Set<Integer> s=new HashSet<>(al);
 
-                int count=1;
-            for (int j = i+1; j < arr.length ; j++) {
-                    //Not complited.
-                    if(arr[i]==arr[j]){
-                        count++;
-                    }
-
-            }
-
-            System.out.println(arr[i]+"="+count);
+        for (Integer i:s) {
+            System.out.println("frequency of"+i+"="+Collections.frequency(al,i));
         }
 
 
