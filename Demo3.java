@@ -5,15 +5,27 @@ import java.util.stream.Stream;
 class Demo3 {
     public static void main(String[] args) {
 
-      String s= "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";
+      int a=121;
+      int b=a;
+      int rev=0;
 
-      char[] ch=s.toCharArray();
-        System.out.println(ch);
+      while(a>0){
+          int z=a%10;
+          a=a/10;
 
-        
+          rev=rev*10+z;
+      }
+        System.out.println(rev);
+        System.out.println(a);
 
-       long count=Stream.of(ch).count();
-        System.out.println(count);
+        if(rev==b){
+            System.out.println("palindrome");
+        }
+        else{
+            System.out.println("Not a palindrome");
+        }
+
+
 
         }
 

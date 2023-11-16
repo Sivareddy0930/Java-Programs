@@ -12,6 +12,7 @@ public class FindDuplicates {
 
         Predicate<Integer> isDuplicate = n -> !encountered.add(n);
 
+
         List al=new ArrayList();
 
         for(Integer a:arr) {
