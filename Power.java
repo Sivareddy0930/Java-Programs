@@ -18,6 +18,6 @@ public class Power {
 
     public static void main(String[] args) {
         power(2,2);
-        power2(7,5);
+        power2(2,2);
     }
 }

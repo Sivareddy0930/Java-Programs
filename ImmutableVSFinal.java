@@ -6,8 +6,8 @@ public class ImmutableVSFinal {
         {
             final StringBuffer obj=new StringBuffer("siva");
             obj.append("Reddy");
-            // even we make referenc obj as final we can change it beacuse if we make final we cannot reassign it but we can modifiy.
-            //but immutibilty means we cannot modify it.
+            // even we make reference obj as final we can change it because if we make final we cannot reassign it, but we can modify.
+            //but immutability means we cannot modify it.
             System.out.println(obj);
 
             final int f=20;
@@ -17,7 +17,13 @@ public class ImmutableVSFinal {
             System.out.println(f);
 
 
-
+//            String s=new String("siva");
+//            s.concat("reddy");
+//            System.out.println(s);
+//
+//            final StringBuffer s1=new StringBuffer("venkata");
+//            s1.append("Tumu");
+//            System.out.println(s1);
 
 
 

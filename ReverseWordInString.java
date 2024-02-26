@@ -12,17 +12,22 @@ public class ReverseWordInString {
 
         Collections.reverse(a);
         System.out.println(a);
-
+//-----------------------------------------------------
         for(int i=0;i<a.size();i++){
 
             System.out.print(a.get(i)+" ");//reddy siva venkata Tumu
 
         }
         System.out.println();
+        System.out.println("==================================================================================");
 
         for(Object ss:a){
             System.out.print(ss +" ");//reddy siva venkata Tumu
         }
+        System.out.println();
+        System.out.println("==================================================================================");
 
+        String result = String.join(" ",a);
+        System.out.println(result);
     }
 }

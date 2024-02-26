@@ -1,35 +1,26 @@
-import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.NoSuchElementException;
 
-class Demo3 {
+public class Demo3 {
     public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Orange");
 
-      int a=121;
-      int b=a;
-      int rev=0;
+        // Creating an iterator for the list
+        Iterator<String> iterator = list.iterator();
 
-      while(a>0){
-          int z=a%10;
-          a=a/10;
-
-          rev=rev*10+z;
-      }
-        System.out.println(rev);
-        System.out.println(a);
-
-        if(rev==b){
-            System.out.println("palindrome");
+        try {
+            // This loop will throw a NoSuchElementException
+            while (iterator.hasNext()) {
+                String element = iterator.next();
+                System.out.println(element);
+            }
+        } catch (NoSuchElementException e) {
+            System.out.println("Caught NoSuchElementException: " + e.getMessage());
         }
-        else{
-            System.out.println("Not a palindrome");
-        }
-
-
-
-        }
-
-
     }
-
-
+}

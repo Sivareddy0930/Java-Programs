@@ -31,8 +31,8 @@ public final class ImmutableClass {
 
     }
 
-// Immutiable vs final
+// Immutable vs final
 
 // final is applicable to variables or reference variables ,class ,methods
-// Immutiable means it can appliacble for only objects
+// Immutable means it can be applicable for only objects
 

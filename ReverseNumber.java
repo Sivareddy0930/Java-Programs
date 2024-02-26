@@ -22,6 +22,13 @@ public class ReverseNumber {
             rev=(rev*10)+value;
         }
         System.out.println(rev);
+        //--------------------------------------
+        int z=123456;
+        String s=String.valueOf(z);
+        String stringValue=new StringBuffer(s).reverse().toString();
+        int revInt=Integer.parseInt(stringValue);
+        System.out.println(revInt);
+
 
     }
 }
