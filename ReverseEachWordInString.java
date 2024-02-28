@@ -1,3 +1,5 @@
+import com.sun.jdi.Value;
+
 import java.util.*;
 
 public class ReverseEachWordInString {
@@ -23,7 +25,17 @@ public class ReverseEachWordInString {
             String ss=new String(sb);
             System.out.print(ss+" ");
         }
-
+//=============================================================
+        System.out.println();
+        List newList=new ArrayList();
+        for (String value:arr) {
+            char c=value.charAt(0);
+           String charString = String.valueOf(c);
+           charString = charString.toLowerCase();
+          String finalValue =  new StringBuffer(value).replace(0,1,charString).toString();
+          newList.add(finalValue);
+        }
+        System.out.println(String.join(" ",newList));
 
 
     }

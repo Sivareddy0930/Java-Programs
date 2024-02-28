@@ -14,6 +14,10 @@ public class ReverseString {
         String s1=new String(sb);
         System.out.println(s1);
 
+//------------------------------------------------------------------------------------
+        String sb1=new StringBuilder(s).reverse().toString();
+        System.out.println(sb1);
+
 
 
 

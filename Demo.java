@@ -1,15 +1,33 @@
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
-class Demo {
-    public static int sum(int n) {
-        if (n <= 0) {
-            return sum(n + 1);
-        }
-        return n + sum(n - 1);
+
+
+class A{
+    public void print(){
+        System.out.println("Base");
     }
+}
+class B extends A{
+    public void print(){
+        System.out.println("Derived");
+    }
+}
+
+
+class Demo {
+    public static void doPrint(A obj){
+       obj.print();
+    }
+
     public static void main(String[] args) {
-        System.out.println(sum(-5));
+        A x=new A();
+        A y=new B();
+        B z=new B();
+        doPrint(x);
+        doPrint(y);
+        doPrint(z);
+
     }
 }
