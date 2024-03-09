@@ -5,6 +5,7 @@ public class Median {
             median = (arr[arr.length/2 -1]+arr[arr.length/2 ] ) /2.0;
         }
         else{
+//            System.out.println(arr.length/2);
             median = arr[arr.length/2 ];
         }
         System.out.println(median);

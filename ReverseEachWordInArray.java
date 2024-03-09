@@ -11,7 +11,7 @@ public class ReverseEachWordInArray {
 
        List<String> newList = Arrays.stream(arr).map(value -> new StringBuffer(value).reverse().toString()).collect(Collectors.toList());
 
-       String[] objArr = newList.toArray(new String[0]);
+       String[] objArr = newList.toArray(String[]::new);
         System.out.println(Arrays.toString(objArr));//[I, wonk, avaJ, gnimmargorp, egaugnal]
     }
 }
