@@ -45,5 +45,3 @@ public class Demo7 {
             return str.substring(maxLenStart, maxLenStart + maxLen);
         }
     }
-
-
